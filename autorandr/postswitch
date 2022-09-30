@@ -1,0 +1,2 @@
+wal -R
+~/.config/polybar/launch.sh
