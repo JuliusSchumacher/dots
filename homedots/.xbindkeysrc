@@ -1,9 +1,7 @@
 # volume
-#"pactl set-sink-volume 0 +1000"
 "amixer set Master 1%+"
    XF86AudioRaiseVolume
 
-#"pactl set-sink-volume 0 -1000"
 "amixer set Master 1%-"
    XF86AudioLowerVolume
 
@@ -19,3 +17,13 @@
 
 "lux -s 5%"
    XF86MonBrightnessDown
+
+# playback
+"playerctl play-pause"
+   XF86AudioPlay
+
+"playerctl previous"
+   XF86AudioPrev
+
+"playerctl next"
+   XF86AudioNext

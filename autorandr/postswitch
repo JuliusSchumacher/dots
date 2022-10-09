@@ -1,2 +1,4 @@
+#! /usr/bin/zsh
+killall polybar
 wal -R
 ~/.config/polybar/launch.sh

@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/julius/down/vasilina-sirotina-vUvEyzVnsZM-unsplash.jpg",
-    "alpha": "100",
-    "special": {
-        "background": "#161413",
-        "foreground": "#f0e3c8",
-        "cursor": "#f0e3c8"
-    },
-    "colors": {
-        "color0": "#161418",
-        "color1": "#BE5D43",
-        "color2": "#6D8A78",
-        "color3": "#E6A944",
-        "color4": "#C4A69F",
-        "color5": "#9F5F5B",
-        "color6": "#EE9F5F",
-        "color7": "#f0e3c8",
-        "color8": "#a89e8c",
-        "color9": "#BE5D43",
-        "color10": "#6D8A78",
-        "color11": "#E6A944",
-        "color12": "#C4A69F",
-        "color13": "#9F5F5B",
-        "color14": "#EE9F5F",
-        "color15": "#f0e3c8"
-    }
+  "wallpaper": "/home/julius/media/photos/walls/leaves.jpg",
+  "alpha": "100",
+  "special": {
+    "background": "#181615",
+    "foreground": "#f0e3c8",
+    "cursor": "#f0e3c8"
+  },
+  "colors": {
+    "color0": "#181615",
+    "color1": "#BE5D43",
+    "color2": "#6D8A78",
+    "color3": "#E6A944",
+    "color4": "#C4A69F",
+    "color5": "#9F5F5B",
+    "color6": "#EE9F5F",
+    "color7": "#f0e3c8",
+    "color8": "#a89e8c",
+    "color9": "#BE5D43",
+    "color10": "#6D8A78",
+    "color11": "#E6A944",
+    "color12": "#C4A69F",
+    "color13": "#9F5F5B",
+    "color14": "#EE9F5F",
+    "color15": "#f0e3c8"
+  }
 }
