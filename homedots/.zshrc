@@ -105,17 +105,14 @@ export CLASSPATH="/usr/share/java/*:"
 
 # Aliases
 
-# alias ls='ls --color=auto'
-alias ls='exa --group-directories-first '
-alias ll='exa --group-directories-first -l --git'
-alias la='exa --group-directories-first -la --git'
-alias lt='exa -T'
+alias ls='eza --group-directories-first '
+alias ll='eza --group-directories-first -l --git'
+alias la='eza --group-directories-first -la --git'
+alias lt='eza -T'
 
 alias pika='pikaur'
 alias cat='bat'
 
-alias vim='nvim'
-alias svim='sudoedit'
 alias v='nvim'
 alias sv='sudoedit'
 
@@ -126,9 +123,24 @@ alias ghci='stack ghci'
 alias haskell='stack runghc'
 alias py='python'
 
+alias ytaudio='mpv --no-video --ytdl-format=bestaudio'
+
 export XDG_CONFIG_HOME="$HOME/.config"
+
+alias clip="cliphist list | gum choose | cliphist decode | wl-copy "
+
+alias glg="git log --oneline --decorate"
+alias gpb="git branch | gum filter | xargs git checkout"
+alias gppr="gh pr list --author JuliusSchumacher | cut -f1,2 | gum filter | cut -f1 | xargs gh pr checkout"
+alias gfrbp="git fetch --all && git rebase origin/master && git push --force-with-lease"
+
+alias gpdev="git push --force-with-lease origin development"
+
+alias tf="terraform"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
+
 source ~/.tokens
+source /usr/share/nvm/init-nvm.sh
