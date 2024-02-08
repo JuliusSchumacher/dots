@@ -52,7 +52,16 @@ keybindings:
         git fetch &&
         git rebase origin/master &&
         git push --force-with-lease
+    - key: f
+      command: >
+        cd {{.RepoPath}} &&
+        cd protected/hyperion &&
+        npm run format:prettier &&
+        git commit --all --no-edit --amend &&
+        git push --force-with-lease
 repoPaths:
   struqtur/struqtur-legacy: ~/code/struqtur-legacy
+  struqtur/infrastructure: ~/code/infrastructure
+  struqtur/struqtur-native-android: ~/code/struqtur-native-android
 pager:
   diff: "bat --paging always"
