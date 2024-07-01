@@ -64,15 +64,11 @@ bindkey -v
 
 # Custom prompt
 
-ZSH_THEME_GIT_PROMPT_PREFIX="["
-ZSH_THEME_GIT_PROMPT_SUFFIX="]"
-ZSH_THEME_GIT_PROMPT_DIRTY="±"
-ZSH_THEME_GIT_PROMPT_BEHIND="⇣"
-ZSH_THEME_GIT_PROMPT_AHEAD="⇡"
+source ~/.bin/gitstatus.prompt.zsh
 
 
 git_status() {
-  echo -n "%F{242}$(git_prompt_info)$(git_prompt_status)%f"
+  echo "$GITSTATUS_PROMPT"
 }
 
 dir_status() {
@@ -144,3 +140,4 @@ source <(ng completion script)
 
 source ~/.tokens
 source /usr/share/nvm/init-nvm.sh
+alias dc='docker compose'
