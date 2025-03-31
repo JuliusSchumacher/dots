@@ -137,7 +137,7 @@ alias tf="terraform"
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
-
 source ~/.tokens
 source /usr/share/nvm/init-nvm.sh
 alias dc='docker compose'
+

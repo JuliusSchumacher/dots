@@ -2,7 +2,7 @@ prSections:
   - title: My Pull Requests
     filters: is:open author:@me
   - title: Needs My Review
-    filters: is:open review-requested:@me
+    filters: is:open review-requested:@me -author:@dependabot
   - title: Involved
     filters: is:open involves:@me -author:@me
 issuesSections:
@@ -67,5 +67,6 @@ repoPaths:
   struqtur/struqtur-legacy: ~/code/struqtur-legacy
   struqtur/infrastructure: ~/code/infrastructure
   struqtur/struqtur-native-android: ~/code/struqtur-native-android
+  struqtur/mobile: ~/code/mobile
 pager:
   diff: "bat --paging always"
