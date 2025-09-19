@@ -1,6 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$HOME/code/tools/bin:$HOME/code/struqtur-legacy/bin:$PATH
 
-ZSH=/usr/share/oh-my-zsh/
+ZSH=~/.oh-my-zsh/
 
 DISABLE_AUTO_UPDATE="true"
 
@@ -8,7 +8,7 @@ DISABLE_AUTO_TILES="true"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git colorize colored-man-pages last-working-dir vi-mode )
+plugins=(git colorize colored-man-pages last-working-dir vi-mode zsh-history-substring-search zsh-autopair )
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
@@ -31,13 +31,13 @@ zstyle :compinstall filename '/home/factor/.zshrc'
 
 # sourcing plugins installed with pacman or written myself
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /etc/profile.d/autojump.zsh
-source /usr/share/zsh/plugins/zsh-autopair/autopair.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/autojump/autojump.zsh
+# source /usr/share/zsh/plugins/zsh-autopair/autopair.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 [[ -s /etc/grc.zsh ]] && source /etc/grc.zsh
-source /usr/share/doc/pkgfile/command-not-found.zsh
+# source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # source oh-my-zsh late, fixes some issues with plugins
 source $ZSH/oh-my-zsh.sh
@@ -133,11 +133,11 @@ alias gfrbp="git fetch --all && git rebase origin/master && git push --force-wit
 alias gpdev="git push --force-with-lease origin development"
 
 alias tf="terraform"
+alias dc='docker compose'
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
 
 
-source ~/.tokens
-source /usr/share/nvm/init-nvm.sh
-alias dc='docker compose'
+# source ~/.tokens
+# source /usr/share/nvm/init-nvm.sh
